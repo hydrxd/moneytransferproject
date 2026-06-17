@@ -16,5 +16,5 @@ For every eligible transaction:
 - 1 reward point per 100 transferred
 - Points are rounded down
 - Example:
- - 250 -> 2 points
- - 99 -> 0 points (not eligible anyway)
+  - 250 -> 2 points
+  - 99 -> 0 points (not eligible anyway)
