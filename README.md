@@ -1,0 +1,20 @@
+Your task is to design and implement a eward module that sits on top of this system and incetivizes users for eligible transactions while maintaining the history of rewards granted to the user.
+The goal of this module is to:
+- Encourage usage through rewards
+- Apply clear, rule-based reward logic
+- Maintain transparency and traceability of rewards
+
+## Reward Eligibility Rules
+A transaction is eligible for rewards only if all of the following conditions are met:
+1. Transaction status is SUCCESS
+2. Transaction amount is greater than 100
+3. Sender and receiver are different users.
+4. Transaction is not self-transfer
+
+## Reward Calculation Logic
+For every eligible transaction:
+- 1 reward point per 100 transferred
+- Points are rounded down
+- Example:
+ - 250 -> 2 points
+ - 99 -> 0 points (not eligible anyway)
